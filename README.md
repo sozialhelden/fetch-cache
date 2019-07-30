@@ -1,5 +1,7 @@
 # fetch-cache 🐕
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/sozialhelden/fetch-cache.svg)](https://greenkeeper.io/)
+
 A cache for WhatWG fetch calls.
 
 - Supports TypeScript
