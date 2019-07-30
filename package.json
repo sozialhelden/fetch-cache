@@ -29,22 +29,22 @@
     "abort-controller": "^3.0.0",
     "babel-jest": "^24.8.0",
     "commitizen": "^4.0.3",
-    "core-js": "^2.6.9",
+    "core-js": "^3.1.4",
     "coveralls": "^3.0.0",
     "cross-env": "^5.1.1",
-    "cz-conventional-changelog": "^2.1.0",
+    "cz-conventional-changelog": "^3.0.2",
     "express": "^4.17.1",
     "jest": "^24.8.0",
     "jest-cli": "^24.8.0",
     "node-fetch": "^2.6.0",
     "normalize-url": "^4.3.0",
     "rimraf": "^2.6.1",
-    "semantic-release": "^12.0.0",
+    "semantic-release": "^15.13.18",
     "ts-jest": "^24.0.2",
     "tslint": "^5.5.0",
     "tslint-config-airbnb": "^5.11.1",
     "tslint-config-prettier": "^1.6.0",
-    "tslint-config-standard": "^7.0.0",
+    "tslint-config-standard": "^8.0.1",
     "typescript": "^3.3.3333"
   },
   "scripts": {
@@ -67,6 +67,6 @@
     "deploy": "npm run build && npm run test:prod && npm publish --access public"
   },
   "dependencies": {
-    "@sozialhelden/hamster-cache": "^1.0.0"
+    "@sozialhelden/hamster-cache": "^3.0.0"
   }
 }
