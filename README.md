@@ -106,7 +106,7 @@ don't really do this, except you have a good reason):
 const fetchCache = new FetchCache({ fetch, ttl: () => 1000 });
 ```
 
-…or configure varying TTLs for specific HTTP response status codes (better). You can customize TTLs depending on response statuses and network errors. See [the default implementation](./src/defaultTTL.ts) for an example how to do this.
+…or configure varying TTLs for specific HTTP response status codes (better). You can customize TTLs depending on response content, HTTP statuses, and network errors. See [the default implementation](./src/defaultTTL.ts) for an example how to do this.
 
 ### Normalize URLs
 
