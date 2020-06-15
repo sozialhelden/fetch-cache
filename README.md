@@ -106,26 +106,7 @@ don't really do this, except you have a good reason):
 const fetchCache = new FetchCache({ fetch, ttl: () => 1000 });
 ```
 
-…or configure varying TTLs for specific HTTP response status codes (better):
-
-```typescript
-const fetchCache = new FetchCache({
-  fetch,
-  ttl: ({ response, state, error }) => {
-    // state is 'running', 'resolved' or 'rejected' here.
-    if (response) {
-      // If a response is successful, keep it in the cache for 2 minutes
-      if (response.status === 200) return 2 * 60 * 1000;
-      // If a response is successful, keep it in the cache for 10 seconds so it shows up if the
-      // resource begins to exist in the meantime
-      if (response.status === 404) return 10 * 1000;
-    }
-    // If you return `undefined` here, the cache will use default TTL values for all other cases.
-  },
-});
-```
-
-For an overview about more cases, consult [the default implementation](./src/defaultTTL.ts).
+…or configure varying TTLs for specific HTTP response status codes (better). You can customize TTLs depending on response statuses and network errors. See [the default implementation](./src/defaultTTL.ts) for an example how to do this.
 
 ### Normalize URLs
 
