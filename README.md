@@ -8,7 +8,7 @@ A cache for WhatWG fetch calls.
 - Does not request the same resource twice if the first request is still loading
 - Customizable TTLs per request, dependent on HTTP status code or in case of network errors
 - Supports all [Hamster Cache](https://github.com/sozialhelden/hamster-cache) features, e.g. eviction based on LRU, maximal cached item count and/or per-item TTL.
-- Runs in NodeJS, but should be isometric && browser-compatible (not tested yet! try at your own risk 🙃)
+- Runs in NodeJS, but should be isometric && browser-compatible (**not tested yet! try at your own risk 🙃**)
 
 ## Installation
 
